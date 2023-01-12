@@ -1,0 +1,306 @@
+body{
+    background-image: linear-gradient(to right, var(--body_gradient_left), var(--body_gradient_right));
+    background-repeat:no-repeat;
+}
+:root {
+    --body_gradient_left:#7200D0;
+    --body_gradient_right: #C800C1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+.menu{
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.menu h1{
+    margin-top: 800px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.menu h1 span{
+    color: #fac031;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+
+
+.menu .menu_box{
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.menu .menu_box .menu_card .menu_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img{
+    transform: scale(1.2);
+}
+
+.menu .menu_box .menu_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.menu .menu_box .menu_card .menu_info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    font-size: 25px;
+    color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info p{
+    color: rgb(155, 225, 15);
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.menu .menu_box .menu_card .menu_info h3{
+    color: rgb(0, 216, 254);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background: yellow;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 1.3s;
+    box-shadow: 9px 16px 10px rgba(0.899, 0.66, 0.88, 0.888);
+    border-radius: 30px;
+}
+
+.menu_btn:hover{
+    transform: scale(1.2);
+    /* width: 300px; */
+}
+.search:hover{
+    background-color: rgb(0, 255, 26);
+    border-radius: 40px;
+    border-color: brown;
+}
+
+.search {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border-color:darkgreen;
+    border-width: 3px;
+    margin-left: 10px;
+}
+.button{
+    border-radius: 4px;
+    margin-left: 6px;
+    background-color: rgba(221, 103, 103, 0.693);
+    cursor: pointer;
+}
+.button:hover{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.body-text {  
+    display: flex;  
+    font-family: "Montserrat", sans-serif;  
+    align-items: center;  
+    justify-content: center;  
+    margin-top: 250px;  
+}  
+nav{  
+    position:fixed;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;  
+    align-items: center;  
+    min-height: 8vh;  
+    background-color: teal;  
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 9px 16px 10px rgba(0.899, 0.66, 0.88, 0.888);
+    scroll-behavior: smooth;
+    z-index: 10;
+}
+.navbar{
+    margin-left: 135px;
+    padding: 0 20px;
+}
+  
+.heading {  
+    color: rgb(0, 0, 0);  
+    text-transform: uppercase;  
+    letter-spacing: 5px;  
+    font-size: 20px;  
+}
+
+  
+.nav-links li{  
+    list-style: none;  
+    float: left;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+  ::-webkit-scrollbar-track {
+    background: black;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background:yellow;
+    border-radius: 10px;
+}
+  
+.nav-links a{  
+    color: white;  
+    text-decoration: none;  
+    letter-spacing: 3px;  
+    font-weight: bold;  
+    font-size: 14px;  
+    padding: 14px 16px;
+    border-radius: 100px; 
+    margin: auto; 
+}
+  
+.nav-links a:hover:not(.active){  
+    background-color: rgb(0, 0, 0);  
+}
+  
+.nav-links li a.active{  
+    background-color: #d0831e;  
+} 
+.logo{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+}
+
+.box{
+    width: auto;
+    border: 5px solid hsl(0, 0%, 40%);
+    padding: 9px;
+    background: hsl(0, 0%, 20%);
+    outline: 5px solid hsl(0, 0%, 60%);
+    box-shadow:
+        0 0 0 10px hsl(0, 0%, 80%),
+        0 0 0 15px hsl(0, 0%, 90%);
+    margin-left: 38%;
+    margin-top: 150px;
+    position: absolute;
+    filter:drop-shadow(0 -6mm 4mm rgb(0, 210, 60));
+}
+.box img{
+    margin-top: 50px;
+    margin-left:50px ;
+}
+
+.box img:hover{
+    transform: scale(1.1);
+    border-radius: 30px;
+}
+.box audio{
+    position: relative;
+    filter:drop-shadow(0 0 0.75rem crimson);
+    width: 400px;
+    background: #f1f3f4;    
+}
+
+audio:hover {transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
+}
+
+.footer-upper {
+    background-color: rgb(26, 201, 201);
+    padding: 20px;
+    border-radius: 50px;
+    list-style: none;
+    box-shadow: 1px -8px 19px rgba(0.899, 0.66, 0.88, 0.888);
+
+}
+.footer-upper .container {
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+
+}
+  
+.footer-upper h4 {
+    padding-bottom: 5px;
+    border-bottom: 9px solid rgb(7, 200, 23);
+    margin-bottom: 30px;
+    border-radius: 25px;
+    justify-content: center;
+    text-shadow: 2px 5px 3px rgb(232, 9, 9);
+}
+.footer-lower {
+    background-color:rgb(219, 137, 31);
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-shadow: 28px 14px 3px black;
+    list-style: none;
+    
+}
+.ii{
+    list-style: none;
+    color: #c83c00;
+}
+.ii :hover{
+    color: #C800C1;
+}

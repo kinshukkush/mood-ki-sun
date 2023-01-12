@@ -1,0 +1,298 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+.search:hover{
+    background-color: rgb(0, 255, 26);
+    border-radius: 40px;
+    border-color: brown;
+}
+
+.search {
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    border-color:darkgreen;
+    border-width: 3px;
+    margin-left: 10px;
+}
+.button{
+    border-radius: 4px;
+    margin-left: 6px;
+    background-color: rgba(221, 103, 103, 0.693);
+    cursor: pointer;
+}
+.button:hover{
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.body-text {  
+    display: flex;  
+    font-family: "Montserrat", sans-serif;  
+    align-items: center;  
+    justify-content: center;  
+    margin-top: 250px;  
+}  
+nav{  
+    position:fixed;
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;  
+    align-items: center;  
+    min-height: 8vh;  
+    background-color: teal;  
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 9px 16px 10px rgba(0.899, 0.66, 0.88, 0.888);
+    scroll-behavior: smooth;
+    z-index: 10;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:yellow;
+    border-radius: 10px;
+  }
+  
+.heading {  
+    color: rgb(0, 0, 0);  
+    text-transform: uppercase;  
+    letter-spacing: 5px;  
+    font-size: 40px;  
+}
+  
+.nav-links{  
+    display: flex;  
+    justify-content: space-evenly;  
+    width: 30%;
+    font-style:inherit;
+}
+  
+.nav-links li{  
+    list-style: none;  
+}
+  
+.nav-links a{  
+    color: white;  
+    text-decoration: none;  
+    letter-spacing: 3px;  
+    font-weight: bold;  
+    font-size: 14px;  
+    padding: 14px 16px;
+    border-radius: 100px; 
+    margin: auto;
+}
+  
+.nav-links a:hover:not(.active){  
+    background-color: rgb(0, 0, 0);  
+}
+  
+.nav-links li a.active{  
+    background-color: #d0831e;  
+} 
+.logo{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    cursor: pointer;
+    /* border-radius: 1000px; */
+}
+
+
+:root {
+    --body_gradient_left:#7200D0;
+    --body_gradient_right: #C800C1;
+    --form_bg: #4e4747;
+    --input_bg: #E5E5E5;
+    --input_hover:#eaeaea;
+    --submit_bg: #387e55;
+    --submit_hover: #da6d20;
+    --icon_color:#030202;
+}
+body {
+    /* make the body full height*/
+    /* height: 15vh; */
+    /* set our custom font */
+    font-family: 'Roboto',
+    sans-serif;
+    /* create a linear gradient*/
+    background-image: linear-gradient(to right, var(--body_gradient_left), var(--body_gradient_right));
+    display:flow-root;
+}
+
+#form_wrapper {
+    width: 1060px;
+    height: 550px;
+    /* this will help us center it*/
+    margin:auto;
+    margin-top: 100px;
+    background-color: var(--form_bg);
+    border-radius: 80px;
+    /* make it a grid container*/
+    display: grid;
+    /* with two columns of same width*/
+    grid-template-columns: 1fr 1fr;
+    /* with a small gap in between them*/
+    grid-gap: 10vw;
+    /* add some padding around */
+    padding: 5vh 5px;
+    box-shadow: 20px 7px 100px rgba(0.899, 0.66, 0.88, 0.888);
+}
+#form_left {
+    /* center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_left img {
+    width: 350px;
+    height: 350px;
+}
+#form_right {
+    display: grid;
+    /* single column layout */
+    grid-template-columns: 1fr;
+    /* have some gap in between elements*/
+    grid-gap: 20px;
+    padding: 10% 5%;
+}
+.input_container {
+    background-color: var(--input_bg);
+    /* vertically align icon and text inside the div*/
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* .input_container:hover {
+    background-color: var(--input_hover);
+} */
+
+.input_container,
+#input_submit {
+    height: 55px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.input_field {
+    /* customize the input tag with lighter font and some padding*/
+    color: var(--icon_color);
+    background-color: inherit;
+    width: 90%;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.input_field:hover,
+.input_field:focus {
+    /* remove the outline */
+    outline: none;
+    color: #7d23c2;
+}
+
+#input_submit {
+    /* submit button has a different color and different padding */
+    background-color: var(--submit_bg);
+    padding-left: 0;
+    font-weight: bold;
+    color: rgb(85, 228, 33);
+    text-transform: uppercase;
+}
+
+#input_submit:hover {
+    background-color: var(--submit_hover);
+    /* simple color transition on hover */
+    transition: background-color,
+        2s;
+    cursor: pointer;
+}
+h1,
+    span {
+        text-align: center;
+    }
+
+    /* shift it a bit lower */
+    #create_account {
+        display: block;
+        position: relative;
+        top: 30px;
+    }
+
+    a {
+        /* remove default underline */
+        text-decoration: none;
+        color: var(--submit_bg);
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: var(--submit_hover);
+    }
+
+    i {
+        color: var(--icon_color);
+    }
+/* make it responsive */
+@media screen and (max-width:768px) {
+
+    /* make the layout  a single column and add some margin to the wrapper */
+    #form_wrapper {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* on small screen we don't display the image */
+    #form_left {
+        display: none;
+    }
+}
+
+.footer-upper {
+    background-color: rgb(26, 201, 201);
+    padding: 20px;
+    border-radius: 50px;
+    list-style: none;
+    box-shadow: 1px -8px 19px rgba(0.899, 0.66, 0.88, 0.888);
+
+}
+.footer-upper .container {
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+
+}
+  
+.footer-upper h4 {
+    padding-bottom: 5px;
+    border-bottom: 9px solid rgb(7, 200, 23);
+    margin-bottom: 30px;
+    border-radius: 25px;
+    justify-content: center;
+    text-shadow: 2px 5px 3px rgb(202, 16, 16);
+}
+.footer-lower {
+    background-color:rgb(219, 137, 31);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    text-shadow: 28px 14px 3px rgb(0, 0, 0);
+    padding-top: 10px;
+}
+.ii{
+    list-style: none;
+}
